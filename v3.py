@@ -65,7 +65,7 @@ def sign_up(k):
             "Referrer-Policy": "strict-origin-when-cross-origin"
         } 
       
-        reg = requests.post('https://mcontent.net/portal/register',json={
+        reg = requests.post('https://mcontent.net/register',json={
                 "email": email,
                 "pass": password
                 },headers=headers)
