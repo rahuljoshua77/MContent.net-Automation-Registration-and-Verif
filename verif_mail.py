@@ -112,3 +112,5 @@ def main():
     list_accountsplit = list_account.split("\n")
     for i in list_accountsplit:
         login(i)
+
+main()
