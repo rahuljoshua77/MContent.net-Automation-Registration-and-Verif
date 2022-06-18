@@ -110,7 +110,7 @@ def sign_up(k):
       
             r = reds.post('https://proapi.mcontent.net/system/api/profile',json={"id":get_id,"username":username,"fname":fake.first_name(),"lname":fake.last_name(),"p_num":"","dob":"","abt_me":"","lang":{"tag":"","tagsArray":[]},"work_data":[{"id":0,"name":"","website":"","occupation":"","from":"","to":"","datepickerV":'false',"datepickerT":'false'}],"pro_skills":{"tag":"","tagsArray":[]},"edu_data":[{"id":0,"type1":"","from":"","to":"","datepickerF":'false',"datepickerT":'false'}],"hob":{"tag":"","tagsArray":[]},"referal":"i1mam"},headers=header)
 
-            print(r.text)
+            # print(r.text)
             additonal = ''.join(random.choice(string.ascii_lowercase + string.digits) for _ in range(5))
             headers= {
                 "accept": "application/json, text/javascript, */*; q=0.01",
