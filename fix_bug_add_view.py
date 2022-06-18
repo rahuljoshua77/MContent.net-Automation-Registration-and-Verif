@@ -231,7 +231,10 @@ def sign_up(k):
         else:
             print(f"[*] [{email}] Registery Not Success!")
     except Exception as e:
-        print(f"[*] [{email}] Error: {e}")
+        if str(e) == "Expecting value: line 1 column 1 (char 0)":
+            pass
+        else:
+            print(f"[*] [{email}] Error: {e}")
     
  
     
